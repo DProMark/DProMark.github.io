@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+:root {
+	--clr-white: #fff;
+	--clr-black: #000;
+	--clr-purple: #920cf4;    
+	--clr-azul-oscuro: #162938; 
+}
+
+*{ 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	--border-radius: 50px;
+    --gris: #343440;
+    --gutter: 3.125vw;
+
+	display: block;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url('../Imagenes/subimagenes/banner1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+/* Encabezado */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	background: #343A40;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+  }
+  
+  .logo {
+	width: 100px;
+	height: auto;
+	user-select: none;
+  }
+  
+  .navigation {
+	display: flex;
+	align-items: center;
+  }
+  
+  .navigation a {
+	position: relative;
+	font-size: 1.1em;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 40px;
+  }
+  
+  .navigation a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	transform-origin: right;
+	border-radius: 5px;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+  }
+  
+  .navigation a:hover:after {
+	transform-origin: left;
+	transform: scaleX(1);
+  }
+  
+  .navigation .btnLogin-popup {
+	width: 130px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #fff;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 500;
+	margin-left: 40px;
+	transition: 0.5s;
+  }
+  
+  .navigation .btnLogin-popup:hover {
+	background: #fff;
+	color: #162938;
+  }
+  
+  .checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+  }
+  
+  #check {
+	display: none;
+  }
+
+  /* Conoce principal */
+.Conoce {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 300px;
+	text-align: center;
+}
+
+h1 {
+	color: #ffffff;
+}
+
+p  {
+	margin-top: 10;
+	color: #ffffff;
+}
+
+button {
+	width: 130px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #fff;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 500;
+	margin-left: 40px;
+	transition: .5s;
+}
+
+button:hover {
+	background: #fff;
+	color: #162938;
+}
+
+/*Sobre nosotros*/
+.container {
+	position: relative;
+}
+
+.background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 550px 100px 400px;
+	margin-bottom: 50px;
+	background-color: #fff;
+	background-size: cover;
+	z-index: -1;
+}
+
+.content {
+	background-color: #343A40;
+	margin-top: -10px;
+}
+
+.content p {
+	margin-top: 0px;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: left;
+	color: #fff;
+}
+
+/* Sección de servicios */
+.Servicios {
+	margin-top: 1px;
+	padding: 100px;
+	background: #fff;
+}
+
+.Servicios h3 {
+	text-align: center;
+}
+
+.Servicios p {
+	color: #000;
+	margin-top: 10px;
+	text-align: center;
+}
+.Servicios ul {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.Servicios li {
+	list-style: none;
+	background-color: #343A40;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	flex-basis: calc(33.33% - 20px);
+	margin-top: 15px;
+	margin-bottom: 20px;
+	padding: 20px;
+	box-shadow: 7px 13px 37px #000;
+	transition: transform 0.3s ease;
+  }
+  
+  .Servicios li:hover {
+	transform: scale(1.1);
+  }
+  
+
+.Servicios li img {
+	max-width: 100%;
+	position: center;
+}
+
+
+.Servicios h4 {
+	margin-top: 25px;
+	color: #fff;
+	text-align: center;
+}
+
+.Servicios p {
+	color: #fff;
+}
+
+/*Nosotros*/
+.xd {
+	background-color: #ededed;
+	border-radius: 5px;	
+	
+}
+
+.xd p {
+	text-align: center;
+	padding: 10px;
+	color: #000;
+
+}
+
+/* Fundadores */
+.Servicios .circle {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #343A40;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+  }
+  
+  .Servicios .circle img {
+	margin-top: 10px;
+	max-width: 200px;
+	border-radius: 80%;
+  }
+  
+
+/* Sección acerca de nosotros */
+.nosotros {
+	background-color: #343A40;
+	padding: 50px;
+}
+
+.nosotros h3 {
+	color: #fff;
+}
+
+/* Sección de contacto */
+.contacto {
+	background-color: #fff;
+	padding: 50px;
+}
+.contacto h3 {
+	margin-top: 10px;
+	color: fff;
+}
+
+label {
+	display: block;
+	margin-bottom: 20px;
+}
+
+input, textarea {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	width: 100%;
+}
+
+textarea {
+	height: 170px;
+}
+
+button[type=submit] {
+	margin-top: 10px;
+	margin-left: 0px;
+	background-color: #333;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.2em;
+	padding: 10px 20px;
+	transition: background-color 0.5s ease;
+	transition: transform 0.3s ease;
+}
+
+button[type=submit]:hover {
+	background-color: #666;
+	transform: scale(1.1);
+}
+
+
+/*Los servicios*/
+/*
+.losserv {
+	background: #fff;
+}
+
+div.text h1 {
+	font-size: 60px;
+	margin: 0;
+	color: #000;
+	text-align: center;
+}
+
+section.losserv h2{
+	font-size: 30px;
+	margin: 0;
+	color: #fff;
+	text-align: center;
+}
+
+section.losserv p{
+	font-size: 20px;
+	margin: 0;
+	color: #000;
+}
+
+section.serv article {
+	display: flex;	
+	justify-content: center;
+	margin-top: 50px;
+  }
+  
+  section.serv figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 30.25vw;
+	margin: 0;
+	background: var(--gris);
+	border-radius: var(--border-radius);
+	margin: 15px;
+	padding: 10px;
+	margin-left: 200px;
+	margin-right: 200px;
+	text-align: center;
+	transition: all 0.3 ease;
+  }
+  
+  section.serv figure h2 {
+	margin-bottom: 10px;
+  }
+  
+  section.serv figure .imagen img {
+	width: 100%; 
+	margin-top: 10px;
+  }
+
+  section.serv figure figcaption {
+	display: none;
+	color: #fff;
+  }
+
+  section.serv figure.expand:hover {
+	transform: scale(1.1);
+  }
+  
+  section.serv figure.expand:hover figcaption {
+	display: block;
+  }
+*/
+/*Portafolio*/
+
+.portafolio {
+	background: #fff;
+}
+
+.portafolio img {
+	margin-top: 10px;
+}
+
+poner fondo
+
+/*Lineas xd*/
+.linea-gris {
+	border-top: 20px solid #343A40;
+  }
+  
+/* Pie de pagina */
+footer {
+	background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width:100%;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #fff;
+}
+/* Estilos para tabletas */
+
+@media (max-width:  1200px){
+	body {
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		background: url('../Imagenes/subimagenes/banner2.jpg');
+	}
+	
+/*Encabezado*/
+	.logo {
+		width: 100px;
+		height: auto;
+		user-select: none;
+		padding-left: 10px;
+		margin-left: -50px;
+	  }
+	  .navigation a {
+		position: relative;
+		align-items: center;
+		font-size: 0.99em;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 500;
+		margin-left: 15px;
+	  }
+	  .navigation .btnLogin-popup {
+		width: 125px;
+		height: 40px;
+		align-items: center;
+		background: transparent;
+		border: 2px solid #fff;
+		outline: none;
+		border-radius: 6px;
+		cursor: pointer;
+		font-size: 1.1em;
+		color: #fff;
+		font-weight: 500;
+		margin-left: 40px;
+		margin-top: 0px;
+		transition: 0.5s;
+	  }
+
+/* Conoce principal */
+
+	.Conoce {
+		padding: 250px;
+		text-align: center;
+		top: 10px;
+	}
+	
+	.background-image {
+		padding: 550px 100px 200px;
+	}
+
+	p  {
+		display: none;
+	}
+	
+	button {
+		align-items: center;
+		width: 130px;
+		height: 50px;
+		background: transparent;
+		border: 2px solid #fff;
+		outline: none;
+		border-radius: 6px;
+		cursor: pointer;
+		font-size: 1.1em;
+		color: #fff;
+		font-weight: 500;
+		margin-top: 15px;
+		margin-left: -0px;
+		transition: .5s;
+	}
+	
+/*Sobre nosotros*/
+	.content {
+		margin-top: 10px;
+	}
+	.content p {
+		color: #fff;
+	}
+
+
+/*Fundadores*/
+
+	.Servicios .circle img {
+		max-width: 150px;
+	}
+
+/*Los servicios*/
+	div.text h1 {
+	font-size: 40px;
+	}
+
+	section.losserv h2{
+	font-size: 20px;
+	} 
+	  
+	section.serv article {
+		flex-direction: column;
+	}
+		
+	section.serv figure {
+		padding: 20px;
+	}	
+
+
+	  
+  }
+
+   /* Estilos para dispositivos móviles */
+@media only screen and (max-width: 700px) {
+	html, body {
+		--border-radius: 50px;
+        --gutter: 6.25vw;
+		
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		background: url('../Imagenes/subimagenes/banner3.jpg');
+		margin-top: -10px;
+	}
+	
+	main {
+		display: flex;
+		flex-direction: column;
+		margin-top: 40px;
+	}
+
+	.logo {
+		width: 100px;
+		height: auto;
+		user-select: none;
+		padding-left: 20px;
+		margin-left: -100px;
+	  }
+	  .checkbtn {
+		display: block;
+		margin-left: 240px;
+	  }
+	  .navigation {
+		position: fixed;
+		width: 100%;		
+		background: #343440;
+		border-radius: var(--border-radius);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 110px;
+		left: 100%;
+	
+		transition: all .5s;
+	  }
+	
+	  .navigation a {
+		font-size: 0.80em;
+		margin-left: 10px;
+	  }
+	  
+	  #check:checked ~ .navigation {
+		left: 0px; 
+	  }
+	  
+	  .navigation .btnLogin-popup {
+		width: 95px;
+		font-size: 0.80em;		
+		margin-left: 10px;
+		transition: 0.5s;
+	  }
+ 
+/* Conoce principal */
+	.Conoce {
+		flex-direction: column;
+		padding: 100px;
+		margin-top: 100px;
+	}
+
+
+/*Sobre nosotros*/
+	.background-image {
+		padding: 550px 100px 200px;
+	}
+
+	.content {
+		display: none;
+	}
+/* Sección de servicios */
+	.Servicios ul {
+		flex-direction: column;
+	}
+
+/*Los servicios*/
+	div.text h1 {
+		font-size: 30px;
+	}
+
+	section.losserv h2{
+		font-size: 20px;
+	}
+	
+	section.serv article {
+		flex-direction: column;
+	}
+
+	section.serv figure {
+		flex-basis: 25vh;
+		margin: 10px;
+		padding: 0px;
+		margin-left: 15px;
+		margin-right: 15px;
+	  }
+
+	section.serv figure .imagen img {
+		width: 60%;
+	  }
+	  
+}
